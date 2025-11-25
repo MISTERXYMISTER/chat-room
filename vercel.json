@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "env": {
+    "MONGODB_URI": "@mongodb-uri"
+  },
+  "functions": {
+    "pages/api/socket/index.ts": {
+      "maxDuration": 30
+    }
+  }
+}
